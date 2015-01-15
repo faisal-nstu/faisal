@@ -1,0 +1,25 @@
+﻿<prism:MvvmAppBase x:Class="OrgChartUsingViewModel.App"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:converters="using:OrgChartUsingViewModel.Converters"
+                   xmlns:prism="using:Microsoft.Practices.Prism.StoreApps">
+	<prism:MvvmAppBase.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Template/ResourceTemplates.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Application-specific resources -->
+            <x:String x:Key="AppName">OrgChartUsingViewModel</x:String>
+            <converters:EnumtoPathVisibilityConverter x:Key="EnumtoPathVisibilityConverter"/>
+            <converters:EnumtoExpandConverter x:Key="EnumtoExpandConverter"/>
+            <converters:EnumtoCollapseConverter x:Key="EnumtoCollapseConverter"/>
+        </ResourceDictionary>
+        
+       
+
+        
+       
+        
+        
+	</prism:MvvmAppBase.Resources>
+</prism:MvvmAppBase>

@@ -1,0 +1,9 @@
+﻿<prism:MvvmAppBase x:Class="Exerciser.App"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:prism="using:Microsoft.Practices.Prism.StoreApps">
+	<prism:MvvmAppBase.Resources>
+        <!-- Application-specific resources -->
+        <x:String x:Key="AppName">Exerciser</x:String>	
+	</prism:MvvmAppBase.Resources>
+</prism:MvvmAppBase>

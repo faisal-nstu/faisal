@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Employees>
+  <Employee Name="Maria Anders"
+          ContactNo="7899896099"
+          Destination="Managing Director"
+          Doj="1-March-2010"
+          EmailId="joplin@xyz.com"
+          ImageUrl="ms-appx:///Diagram/OrganizationalChartDemo/Resource/eric.png"
+          IsExpand="Expand"
+          RatingColor="#FFC34444"
+          Salary="90000"
+         >
+    <Employee.BitImag>
+      <BitmapImage UriSource="{Binding ImageUrl}" />
+    </Employee.BitImag>
+  </Employee>
+
+
+  <Employee Name="Ana Trujillo"
+          ContactNo="7899896099"
+          Destination="Project Manager "
+          Doj="12/April/2010"
+          EmailId="joplin@xyz.com"
+          ImageUrl="ms-appx:///Diagram/OrganizationalChartDemo/Resource/Thomas.PNG"
+          IsExpand="Expand"
+          RatingColor="#FF68C2DE"
+          Salary="80000"
+          ReportingPerson="Maria Anders">
+    <Employee.BitImag>
+      <BitmapImage UriSource="{Binding ImageUrl}" />
+    </Employee.BitImag>
+  </Employee>
+
+  <Employee Name="Antonio Moreno"
+          ContactNo="7899896099"
+          Destination="Project Lead"
+          Doj="23/may/2012"
+          EmailId="joplin@xyz.com"
+          ImageUrl="ms-appx:///Diagram/OrganizationalChartDemo/Resource/images9.png"
+          IsExpand="Expand"
+          RatingColor="#FF93B85A"
+          Salary="70000"
+          ReportingPerson="Maria Anders">
+    <Employee.BitImag>
+      <BitmapImage UriSource="{Binding ImageUrl}" />
+    </Employee.BitImag>
+  </Employee>
+
+  <Employee Name="Thomas Hardy"
+          ContactNo="7899896099"
+          Destination="Senior S/w Engg"
+          Doj="23/may/2012"
+          EmailId="joplin@xyz.com"
+          ImageUrl="ms-appx:///Diagram/OrganizationalChartDemo/Resource/image2.png"
+          IsExpand="Expand"
+          RatingColor="#FF93B85A"
+          Salary="60000"
+          ReportingPerson="Maria Anders">
+    <Employee.BitImag>
+      <BitmapImage UriSource="{Binding ImageUrl}" />
+    </Employee.BitImag>
+  </Employee>
+
+  <Employee Name="Christina Berglund"
+          ContactNo="7899896099"
+          Destination="S/w Engg"
+          Doj="23/may/2012"
+          EmailId="joplin@xyz.com"
+          ImageUrl="ms-appx:///Diagram/OrganizationalChartDemo/Resource/image2.png"
+          IsExpand="Expand"
+          RatingColor="#FF93B85A"
+          Salary="50000"
+          ReportingPerson="Thomas Hardy">
+    <Employee.BitImag>
+      <BitmapImage UriSource="{Binding ImageUrl}" />
+    </Employee.BitImag>
+  </Employee>
+</Employees>

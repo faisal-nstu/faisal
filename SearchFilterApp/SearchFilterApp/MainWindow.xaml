@@ -1,0 +1,52 @@
+﻿<Window x:Class="SearchFilterApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid 
+        x:Name="TopGrid"
+        FocusManager.FocusedElement="{Binding ElementName=searchTextBox}" Margin="0,0,0,4"> 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBox Grid.Row="0" 
+                 Grid.Column="1"
+                 Width="150"
+                 HorizontalAlignment="Left"
+                 x:Name="searchTextBox"
+                 Text="{Binding FilterString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        
+        <ListView Grid.Row="1"
+                  Grid.Column="1"
+                  ItemsSource="{Binding Locations}"
+                  Name="LocationListView">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="400" 
+                                    DisplayMemberBinding="{Binding Name}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
+       
+
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    >
+            <TextBlock Text="You have searched '"></TextBlock>
+            <TextBlock Name="searchTerm" 
+                       Text="{Binding FilterString}"/>
+            <TextBlock Text="'"/>
+            
+        </StackPanel>
+        
+        
+    </Grid>
+</Window>
